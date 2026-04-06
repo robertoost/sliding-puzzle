@@ -141,11 +141,11 @@ describe('PuzzleService', () => {
         { value: 12, correctPosition: 11, currentPosition: 11 },
         { value: 13, correctPosition: 12, currentPosition: 12 },
         { value: 14, correctPosition: 13, currentPosition: 13 },
-        { value: 15, correctPosition: 14, currentPosition: 14 },
+        { value: 15, correctPosition: 14, currentPosition: 15 },
       ]);
-      service.emptyPosition.set(15);
+      service.emptyPosition.set(14);
 
-      service.moveTile(14);
+      service.moveTile(15);
 
       expect(service.isComplete()).toBe(true);
     });

@@ -10,7 +10,7 @@ import { TileData } from '../puzzle-service';
 export class Tile {
   tile = input.required<TileData>();
   isMovable = input.required<boolean>();
-  imagePath = input.required<string>();
+  imagePath = input<string>();
   clicked = output<number>();
 
   onTileClick(): void {

@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ComponentRef } from '@angular/core';
-
 import { Tile } from './tile';
 import { TileData } from '../puzzle-service';
 
@@ -10,8 +9,8 @@ describe('Tile', () => {
   let componentRef: ComponentRef<Tile>;
 
   const mockTileData: TileData = {
-    value: 5,
-    correctPosition: 4,
+    value: 6,
+    correctPosition: 5,
     currentPosition: 8
   };
 
@@ -39,7 +38,7 @@ describe('Tile', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     const tileNumber = compiled.querySelector('.tile-number');
-    expect(tileNumber?.textContent).toContain('5');
+    expect(tileNumber?.textContent).toContain('6');
   });
 
   it('should emit clicked event when tile is clicked and movable', () => {
@@ -93,6 +92,7 @@ describe('Tile', () => {
   });
 
   it('should calculate correct background position', () => {
+    mockTileData
     const position = component.getBackgroundPosition();
     expect(position).toBe('33.333333333333336% 33.333333333333336%');
   });
@@ -106,7 +106,7 @@ describe('Tile', () => {
   });
 
   it('should calculate background position for last tile', () => {
-    componentRef.setInput('tile', { value: 15, correctPosition: 14, currentPosition: 14 });
+    componentRef.setInput('tile', { value: 16, correctPosition: 15, currentPosition: 15 });
     fixture.detectChanges();
 
     const position = component.getBackgroundPosition();

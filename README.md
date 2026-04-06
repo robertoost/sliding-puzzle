@@ -34,15 +34,14 @@ ng serve
 
 Open your browser and go to http://localhost:4200. The app will automatically reload if you make changes to the code.
 
-## Building for Production
+## Testing
 
-To build the project for production:
+To test the project:
 
 ```
-ng build --prod
+ng test
 ```
-
-The build artifacts will be stored in the dist/ directory.
+This will run the full test suite.
 
 
 ## Final Notes

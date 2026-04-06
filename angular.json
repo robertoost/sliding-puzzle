@@ -7,6 +7,13 @@
   "projects": {
     "demo": {
       "architect": {
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "runner": "karma",
+            "tsConfig": "tsconfig.app.json"
+          }
+        },
         "build": {
           "builder": "@angular/build:application",
           "configurations": {
@@ -25,7 +32,7 @@
             }
           },
           "options": {
-            "assets": ["src/assets", {"glob": "**/*", "input": "public"}],
+            "assets": ["src/favicon.ico", "src/assets", {"glob": "**/*", "input": "public"}],
             "index": "src/index.html",
             "browser": "src/main.ts",
             "outputPath": "dist/demo",
