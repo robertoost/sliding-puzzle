@@ -1,6 +1,7 @@
 # Sliding Puzzle
 
 A simple 4x4 sliding puzzle with 15 pieces.
+<img width="788" height="908" alt="image" src="https://github.com/user-attachments/assets/04dbc511-8fda-494e-a203-e7aca1cdb897" />
 
 ## Prerequisites
 
