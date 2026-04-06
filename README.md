@@ -1,6 +1,6 @@
 # Sliding Puzzle
 
-A simple 4x4 sliding puzzle with 15 pieces, built as a take home assignment for McMain Software.
+A simple 4x4 sliding puzzle with 15 pieces.
 
 ## Prerequisites
 
