@@ -1,0 +1,9 @@
+<div
+  class="tile"
+  [class.movable]="isMovable()"
+  [style.background-position]="getBackgroundPosition()"
+  [style.background-image]="getBackgroundImage()"
+  (click)="onTileClick()"
+>
+  <span class="tile-number">{{ tile().value }}</span>
+</div>

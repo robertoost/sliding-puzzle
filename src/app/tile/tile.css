@@ -1,0 +1,40 @@
+.tile {
+  width: 100%;
+  height: 100%;
+  background-size: 400%;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  cursor: default;
+  position: relative;
+  transition: transform 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile-number {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.tile.movable {
+  cursor: pointer;
+}
+
+.tile.movable:hover {
+  transform: scale(0.95);
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.tile.movable:active {
+  transform: scale(0.9);
+}
